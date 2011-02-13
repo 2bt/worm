@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 width = 36
 height = 18
 speed = 8
@@ -12,7 +14,7 @@ f = [[-9] * width] + [[-9] + [0] * (width - 2) + [-9] for _ in range(height - 2)
 x = width / 2
 y = height / 2
 u = v = 0
-l = 0
+l = 1
 dx = 1
 dy = 0
 key = ""
