@@ -27,7 +27,7 @@ try:
 		q = p = [0] * width
 
 		for r in f + [q]:
-			print "".join(("|"*(abs(x - y) > 1) or " _"[abs(y - x) < 2 > abs(a - z) and abs(x-a) > 1]) + "_ "[abs(y - z) < 2] for x, y, z, a in zip([0] + p, p + [0], r + [0], [0] + r))[:-1]
+			print "".join(("|"*(abs(x - y) > 1) or " _"[abs(y - x) < 2 > abs(a - z) and abs(x - a) > 1 < abs(y - z)]) + "_ "[abs(y - z) < 2] for x, y, z, a in zip([0] + p, p + [0], r + [0], [0] + r))[:-1]
 			p=r
 		time.sleep(1.0 / speed)
 
